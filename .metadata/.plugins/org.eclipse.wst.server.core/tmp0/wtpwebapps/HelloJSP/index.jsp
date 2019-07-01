@@ -35,12 +35,17 @@
 	         <input type="text" name="user">
 	         <input type="submit" value="確定">
          </form>
+         <% request.setCharacterEncoding("UTF-8"); %>
+         <p>こんにちは、<%=request.getParameter("user") %>さん！</p>
 
-         <form method="post" action="tottal-out.jsp">
+
+         <form method="post" action="total-out.jsp">
 	         <input type="text" name="price">
 	         円x
 	         <input type="text" name="count">
 	         個+送料
+	         <input type="text" name="delivery">
+	         円=
 	         <input type="submit" value="計算">
          </form>
 	</body>
