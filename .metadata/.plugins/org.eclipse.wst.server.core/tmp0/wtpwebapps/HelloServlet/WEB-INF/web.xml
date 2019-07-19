@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
-	  http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>HelloServlet</display-name>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
@@ -12,7 +9,6 @@
     <servlet-name>Hello</servlet-name>
     <servlet-class>HelloServlet</servlet-class>
   </servlet>
-
   <servlet-mapping>
     <servlet-name>Hello</servlet-name>
     <url-pattern>/HelloServlet/HelloServlet</url-pattern>
@@ -37,12 +33,21 @@
   </servlet-mapping>
 
   <servlet>
-	  <servlet-name>Test</servlet-name>
-	  <servlet-class>TestServlet</servlet-class>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>TestServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-	  <servlet-name>Test</servlet-name>
-	  <url-pattern>/HelloServlet/TestServlet</url-pattern>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/HelloServlet/TestServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	  <servlet-name>MySQL</servlet-name>
+	  <servlet-class>MySQLServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>MySQL</servlet-name>
+	  <url-pattern>/HelloServlet/MySQLSevlet</url-pattern>
   </servlet-mapping>
 
 </web-app>
